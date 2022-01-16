@@ -327,6 +327,27 @@
     position: absolute;
     left: 0;
     bottom: 13px;
+    z-index: 1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: ghostUpDown;
+}
+
+.about__link{
+    position: absolute;
+    top: -32px;
+    right: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__link > span{
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 8px;
 }
 
 @media (max-width: 600px) {
@@ -375,6 +396,7 @@
         left: 50%;
         bottom: 185px;
         transform: translateX(-50%);
+        animation-name: ghostUpDownAbsolute;
     }
 }
 
@@ -437,5 +459,17 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes ghostUpDownAbsolute {
+    0% {
+        transform: translate(-50%,0);
+    }
+    50%{
+        transform: translate(-50%,-10px);
+    }
+    100% {
+        transform: translate(-50%,0);
     }
 }
