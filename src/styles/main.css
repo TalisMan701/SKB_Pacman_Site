@@ -1,6 +1,7 @@
 .page{
     background-image: url("../images/da5xbmd-d129bb3a-b1de-4d27-bd72-69d5f7e9f2ea.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -243,6 +244,14 @@
     flex-flow: column nowrap;
 }
 
+.main__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
 .main__title{
     font-style: normal;
     font-weight: bold;
@@ -314,3 +323,101 @@
     bottom: 13px;
 }
 
+@media (max-width: 600px) {
+    .search-box{
+        position: absolute;
+        top: 70px;
+        right: 16px;
+    }
+
+    .main__title{
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .main__content-ghost1{
+        width: 100px;
+        height: 100px;
+        top: -105px;
+        right: 0;
+    }
+
+    .main__content-ghost2{
+        width: 100px;
+        height: 100px;
+        bottom: -120px;
+        left: 0;
+    }
+
+    .about{
+        width: 100%;
+        height: 330px;
+        background: rgba(0, 0, 0, 0.78);
+        border-radius: 16px;
+        padding: 154px 16px 16px 16px;
+        position: relative;
+    }
+
+    .about > h2, .about > p{
+        text-align: center;
+    }
+
+    .about__img{
+        width: 215px;
+        height: 215px;
+        position: absolute;
+        left: 50%;
+        bottom: 185px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 450px) {
+    .logo{
+        width: 60px;
+        margin-right: 8px;
+    }
+
+    .logo__link{
+        width: 60px;
+        height: 60px;
+    }
+
+    .main__title{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .footer__container > span{
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .about > h2{
+        font-size: 20px;
+        margin: 0 0 8px 0;
+    }
+    .about > p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+    /*.search-box__input{
+        position: absolute;
+        top: 52px;
+        right: 1px;
+        width: 200px;
+        border-radius: 10px;
+        padding-right: 40px;
+    }
+
+    .search-box__button{
+        width: 38px;
+        height: 38px;
+        top: 52px;
+        right: 1px;
+        border: none;
+    }*/
+}
