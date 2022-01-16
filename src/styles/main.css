@@ -272,6 +272,9 @@
     height: 145px;
     top: -90px;
     right: -25px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: ghostUpDown;
 }
 
 .main__content-ghost2{
@@ -280,6 +283,9 @@
     height: 145px;
     bottom: -145px;
     left: -9px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: ghostUpDown;
 }
 
 /*footer*/
@@ -420,4 +426,16 @@
         right: 1px;
         border: none;
     }*/
+}
+
+@keyframes ghostUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
